@@ -9,9 +9,9 @@ Author: Vishesh
 int main(int argc, char const *argv[])
 {
     // Variable declaration/initialization
-    int num, status = 1;
+    int num, status;
 
-    while (status == 1)
+    do
     {
         // Taking input from the user
         printf("\n\nEnter an integer: ");
@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
         printf("\nWould you like to print another table?");
         printf("\nEnter 1 for 'Yes' or anything else for 'No': ");
         scanf("%d", &status);
-    }
+    } while (status == 1);
     return 0;
 }
 
